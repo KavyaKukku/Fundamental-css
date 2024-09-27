@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card</title>
+    <title>Chris Mills - Business Card</title>
     <style>
-        
+       
         html {
             font-size: 10px;
         }
@@ -17,7 +17,7 @@
         
         .card {
             width: 300px;
-            height: 200px;
+            height: auto;
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -25,6 +25,8 @@
             margin: 20px auto;
             overflow: hidden;
         }
+
+        
         .card-header {
             background: linear-gradient(to bottom, #555, #888);
             border-top-left-radius: 10px;
@@ -41,39 +43,44 @@
             height: 5em; /* 50px total height (including padding) */
         }
 
+       
         .card article {
-            height: 12em; /* 120px in em */
+            height: auto;
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
             padding: 1em;
             color: #fff;
         }
 
+        /* Image styles */
         .card img {
             float: right;
             max-height: 100%;
             border-radius: 5px;
         }
 
+        
         h2, p {
             margin: 0;
         }
 
+        
         .card-header h2 {
-            font-size: 2em; /* 20px */
-            line-height: 3em; /* Vertically center the text */
+            font-size: 2em; 
+            line-height: 3em; 
             color: #fff;
         }
 
+        
         .card-footer p {
-            font-size: 1.5em; /* 15px */
-            line-height: 3em; /* Vertically center the text */
+            font-size: 1.5em; 
+            line-height: 3em; 
             color: #fff;
         }
 
         
         .card article p {
             padding-left: 1em;
-            color: #ddd; /* Light color for readability */
+            color: #ddd; 
         }
     </style>
 </head>
@@ -81,14 +88,18 @@
 
     <div class="card">
         <div class="card-header">
-            <h2>John Doe</h2>
+            <h2>Chris Mills</h2>
         </div>
         <article>
-            <p>Web Developer | Gamer | Streamer</p>
+            <p>50 My Street, The Town, Gray Peach, UK</p>
+            <p>2050 1MU</p>
+            <p>Tel: 01234 567 890</p>
+            <p>Mail: chris@nothers.com</p>
+            <p>Editing, writing, and web development services</p>
             <img src="profile.jpg" alt="Profile Image">
         </article>
         <div class="card-footer">
-            <p>www.johndoe.com</p>
+            <p>www.chrismills.com</p>
         </div>
     </div>
 
