@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        
+        html {
+            font-size: 10px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .card {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .card-header {
+            background: linear-gradient(to bottom, #555, #888);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 1em;
+            height: 5em; /* 50px total height (including padding) */
+        }
+
+        .card-footer {
+            background: linear-gradient(to bottom, #888, #555);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 1em;
+            height: 5em; /* 50px total height (including padding) */
+        }
+
+        .card article {
+            height: 12em; /* 120px in em */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            padding: 1em;
+            color: #fff;
+        }
+
+        .card img {
+            float: right;
+            max-height: 100%;
+            border-radius: 5px;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        .card-header h2 {
+            font-size: 2em; /* 20px */
+            line-height: 3em; /* Vertically center the text */
+            color: #fff;
+        }
+
+        .card-footer p {
+            font-size: 1.5em; /* 15px */
+            line-height: 3em; /* Vertically center the text */
+            color: #fff;
+        }
+
+        
+        .card article p {
+            padding-left: 1em;
+            color: #ddd; /* Light color for readability */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>John Doe</h2>
+        </div>
+        <article>
+            <p>Web Developer | Gamer | Streamer</p>
+            <img src="profile.jpg" alt="Profile Image">
+        </article>
+        <div class="card-footer">
+            <p>www.johndoe.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
