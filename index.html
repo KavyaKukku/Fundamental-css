@@ -12,17 +12,21 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9; 
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Card container styles */
         .card {
-            width: 90%; /* Make the card responsive */
-            max-width: 400px; /* Ensure it doesn't grow too large */
+            width: 400px; /* Rectangular size */
+            height: 250px; /* Rectangular size */
             background-color: #ffcc99; 
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 10px;
-            margin: 20px auto;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
@@ -33,9 +37,8 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             padding: 1em;
-            height: 4em; 
             color: #fff;
-            text-align: center; /* Center the name */
+            text-align: center;
         }
 
         .card-footer {
@@ -43,14 +46,12 @@
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             padding: 1em;
-            height: 4em; /* Adjusted height */
             color: #fff;
-            text-align: center; /* Center footer text */
+            text-align: center;
         }
 
         /* Main business card content styles */
         .card article {
-            height: auto;
             background-color: rgba(0, 0, 0, 0.5); 
             padding: 1em;
             color: #fff;
@@ -60,11 +61,11 @@
         /* Image styles */
         .card img {
             float: right;
-            width: 80px; /* Adjusted width */
-            height: 80px; /* Adjusted height */
+            width: 70px; /* Adjusted width */
+            height: 70px; /* Adjusted height */
             border-radius: 50%; 
             object-fit: cover; 
-            margin-top: -80px;
+            margin-top: -70px;
         }
 
         /* Reset margin for h2 and p elements */
@@ -81,7 +82,7 @@
         /* Footer p styles */
         .card-footer p {
             font-size: 1.2em; 
-            line-height: 3em; 
+            line-height: 2em; 
         }
 
         /* Article p styles */
