@@ -12,23 +12,25 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9; 
-            margin: 0;
-            height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            height: 100vh;           /* Make the body take the full viewport height */
+            margin: 0;               /* Remove default margin */
         }
 
         /* Card container styles */
         .card {
-            width: 400px; /* Rectangular size */
-            height: 250px; /* Rectangular size */
+            width: 500px; /* Fixed width for a rectangular card */
+            height: 300px; /* Fixed height for a rectangular card */
             background-color: #ffcc99; 
             border: 1px solid #ccc;
             border-radius: 10px;
-            padding: 10px;
-            overflow: hidden;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         /* Header and footer styles */
@@ -55,17 +57,16 @@
             background-color: rgba(0, 0, 0, 0.5); 
             padding: 1em;
             color: #fff;
-            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
         }
 
         /* Image styles */
         .card img {
-            float: right;
-            width: 70px; /* Adjusted width */
-            height: 70px; /* Adjusted height */
+            width: 80px; /* Adjusted width */
+            height: 80px; /* Adjusted height */
             border-radius: 50%; 
             object-fit: cover; 
-            margin-top: -70px;
         }
 
         /* Reset margin for h2 and p elements */
@@ -76,19 +77,23 @@
         /* Header h2 styles */
         .card-header h2 {
             font-size: 2em;
-            line-height: 3em; 
         }
 
         /* Footer p styles */
         .card-footer p {
             font-size: 1.2em; 
-            line-height: 2em; 
         }
 
-        /* Article p styles */
+        /* Article content p styles */
         .card article p {
-            padding-left: 1em;
             color: #ddd; 
+        }
+
+        /* Flex container for content */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
@@ -99,9 +104,10 @@
             <h2>Chris Mills</h2>
         </div>
         <article>
-            <p>50 My Street <br> The Town <br> Gray Peach <br> UK <br> 2050 1MU<br> Tel: 01234 567 890 <br> 
+            <div class="content-wrapper">
+                <p>50 My Street <br> The Town <br> Gray Peach <br> UK <br> 2050 1MU<br> Tel: 01234 567 890 <br> 
                 Mail: chris@nothers.com</p>
-        
+            </div>
             <img src="profile.jpg" alt="Profile Image">
         </article>
         <div class="card-footer">
